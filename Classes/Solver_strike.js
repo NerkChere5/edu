@@ -8,7 +8,7 @@ export class Solver_strike extends Solver {
     let answer = this._answer_reset_create(key);
     answer.value = {
       legacyAnswers: {
-//         answer: data[0],
+        answer: data[0],
         fails: {},
         success: Object.fromEntries(data.map((item) => [item, {}])),
       },

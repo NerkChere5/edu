@@ -1,1 +1,65 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('9 2 4=5.4;9 2 b=6 u();9 2 7=5.7;5.4=v w 4{c=x;d={};e=\'\';h(){2 f={y:0.c,z:0.d,A:0.i,B:0.e,};2 8=6 j(\'i\',{f});b.k(8)}l(){g.l(...3);0.e=3[1];0.C(\'D\',0.h)}m(n){g.m(...3);0.c=n}o(p,q){g.o(...3);0.d[p]=q}};5.7=E(a){r(!(a F s)){a=6 s(...3)}2 8=6 j(\'G\',{H:I,f:{a}});r(!b.k(8))t;t 7(a)};',45,45,'this||let|arguments|XMLHttpRequest|globalThis|new|fetch|event|export||network|_request_body|_request_headers|_url|detail|super|_onLoad|response|CustomEvent|dispatchEvent|open|send|body|setRequestHeader|name|value|if|Request|return|EventTarget|class|extends|null|request_body|request_headers|response_body|url|addEventListener|load|function|instanceof|request|cancelable|true'.split('|'),0,{}))
+export let XMLHttpRequest = globalThis.XMLHttpRequest;
+export let network = new EventTarget();
+export let fetch = globalThis.fetch;
+
+
+
+
+globalThis.XMLHttpRequest = class extends XMLHttpRequest {
+  _request_body = null;
+  _request_headers = {};
+  _url = '';
+  
+  
+  
+  
+  _onLoad() {
+    let detail = {
+      request_body: this._request_body,
+      request_headers: this._request_headers,
+      response_body: this.response,
+      url: this._url,
+    };
+    let event = new CustomEvent('response', {detail});
+    network.dispatchEvent(event);
+  }
+  
+  
+  
+  
+  open() {
+    super.open(...arguments);
+    
+    this._url = arguments[1];
+    this.addEventListener('load', this._onLoad);
+  }
+  
+  
+  send(body) {
+    super.send(...arguments);
+    
+    this._request_body = body;
+  }
+  
+  
+  setRequestHeader(name, value) {
+    super.setRequestHeader(...arguments);
+    
+    this._request_headers[name] = value;
+  }
+};
+
+
+
+
+globalThis.fetch = function (request) {
+  if (!(request instanceof Request)) {
+    request = new Request(...arguments);
+  }
+  
+  let event = new CustomEvent('request', {cancelable: true, detail: {request}});
+  
+  if (!network.dispatchEvent(event)) return;
+  
+  return fetch(request);
+};

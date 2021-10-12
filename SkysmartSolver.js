@@ -1,1 +1,19 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('1{8}2\'./4/8.3\';1{c}2\'./4/c.3\';1{d}2\'./4/d.3\';1{e}2\'./4/e.3\';1{f}2\'./4/f.3\';1{g}2\'./4/g.3\';1{h}2\'./4/h.3\';1{i}2\'./4/i.3\';1{j}2\'./4/j.3\';1{k}2\'./4/k.3\';1{u}2\'./R/S.3\';T U v{7 w=[c,d,e,f,g,h,i,j,k,];7 x=\'l://b-m.n.o/b/p/y/V/W\';7 z=\'l://A-B-m.n.o/b/p/C/X\';7 D=\'l://A-B-m.n.o/b/p/C/Y-Z\';7 E(5){9(!5.10)11;9(5.F==\'12\'){6.q()}G 9(5.F==\'13\'){6.q(14)}}7 H(5){9(5.a.r.I(6.x)){s J=K.L(5.a.15);8.16(J.y)}G 9(5.a.r.I(6.D)){s t=K.L(5.a.17);8.r=6.z;8.18=5.a.19[\'1a\'];8.1b=t.1c;8.1d=t.1e[0]}}7 M(){u.N(\'1f\',6.H.O(6));1g.N(\'1h\',6.E.O(6))}7 q(P=1i){1j(s Q 1k 6.w){Q.1l(P)}}}v.M();',62,84,'|import|from|js|Classes|event|this|static|Solver|if|detail|api|Solver_drop|Solver_drop_groups|Solver_match|Solver_math|Solver_select|Solver_strike|Solver_test|Solver_test_images|Solver_text|https|edu|skysmart|ru|v1|solve|url|let|request_data|network|SkysmartSolver|_solvers|url_answers_load|content|url_answers_save|vimbox|store|block|url_user_data|_on__keydown|code|else|_on__network_response|startsWith|response_data|JSON|parse|init|addEventListener|bind|reset|solver|Api|Network|export|class|step|load|save|get|list|altKey|return|KeyS|KeyR|true|response_body|template_create|request_body|user_authorization|request_headers|Authorization|user_id|userId|user_groupId|contentGroupIds|response|window|keydown|false|for|of|answers_save'.split('|'),0,{}))
+import {Solver} from './Classes/Solver.js';
+import {Solver_drop} from './Classes/Solver_drop.js';
+import {Solver_drop_groups} from './Classes/Solver_drop_groups.js';
+import {Solver_match} from './Classes/Solver_match.js';
+import {Solver_math} from './Classes/Solver_math.js';
+import {Solver_select} from './Classes/Solver_select.js';
+import {Solver_strike} from './Classes/Solver_strike.js';
+import {Solver_test} from './Classes/Solver_test.js';
+import {Solver_test_images} from './Classes/Solver_test_images.js';
+import {Solver_text} from './Classes/Solver_text.js';
+import {network} from './Api/Network.js';
+
+
+
+
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('B C D{3 h=[E,F,G,H,I,J,K,L,M,];3 i=\'8://7-9.a.b/7/c/j/N/O\';3 k=\'8://l-m-9.a.b/7/c/n/P\';3 o=\'8://l-m-9.a.b/7/c/n/Q-R\';3 p(1){4(!1.S)T;4(1.q==\'U\'){2.d()}r 4(1.q==\'V\'){2.d(W)}}3 s(1){4(1.5.e.t(2.i)){f u=v.w(1.5.X);6.Y(u.j)}r 4(1.5.e.t(2.o)){f g=v.w(1.5.Z);6.e=2.k;6.10=1.5.11[\'12\'];6.13=g.14;6.15=g.16[0]}}3 17(){18.x(\'19\',2.s.y(2));1a.x(\'1b\',2.p.y(2))}3 d(z=1c){1d(f A 1e 2.h){A.1f(z)}}}',62,78,'|event|this|static|if|detail|Solver|api|https|edu|skysmart|ru|v1|solve|url|let|request_data|_solvers|url_answers_load|content|url_answers_save|vimbox|store|block|url_user_data|_on__keydown|code|else|_on__network_response|startsWith|response_data|JSON|parse|addEventListener|bind|reset|solver|export|class|SkysmartSolver|Solver_drop|Solver_drop_groups|Solver_match|Solver_math|Solver_select|Solver_strike|Solver_test|Solver_test_images|Solver_text|step|load|save|get|list|altKey|return|KeyS|KeyR|true|response_body|template_create|request_body|user_authorization|request_headers|Authorization|user_id|userId|user_groupId|contentGroupIds|init|network|response|window|keydown|false|for|of|answers_save'.split('|'),0,{}))
+
+
+SkysmartSolver.init();

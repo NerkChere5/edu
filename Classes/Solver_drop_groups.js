@@ -1,6 +1,0 @@
-import {Solver} from './Solver.js';
-
-
-
-
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('B C D E F{j a(k,7){0 2=1.b(k);G(7 H I){2.l={m:{2:7,n:{},o:{},},}}J{2.l={m:{n:{},o:[{K:7,}],},}}L 2}j M(){0 p=1.q.r.s(\'t-u-c-v\');0 w=1.q.r.s(\'t-u-c-N\');0 d={};1.e=[];1.f=[];g(0 3 h w){0 i=3.6(\'v-O\').P(\',\');0 x=3.6(\'c-4\');g(0 4 h i){d[4]=x}0 5=1.y(3.6(\'z-4\'));0 2=1.a(5,i);0 8=1.b(5);1.e.9(2);1.f.9(8)}g(0 3 h p){0 A=d[3.6(\'2-4\')];0 5=1.y(3.6(\'z-4\'));0 2=1.a(5,A);0 8=1.b(5);1.e.9(2);1.f.9(8)}}}',52,52,'let|this|answer|element|id|answer_key|getAttribute|data|answer_reset|push|_answer_create|_answer_reset_create|group|idMap|_answers|_answers_reset|for|of|element_dragIds|static|key|value|legacyAnswers|fails|success|elements_drag|_template|content|querySelectorAll|vim|dnd|drag|elements_drop|element_groupId|_answer_key_extract|sync|answer_data|export|class|Solver_drop_groups|extends|Solver|if|instanceof|Array|else|groupId|return|_answers_define|item|ids|split'.split('|'),0,{}))

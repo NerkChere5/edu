@@ -35,7 +35,7 @@ export class SkysmartSolver {
   
   
   static _on__keydown(event) {
-    if (!event.altKey) return;
+//     if (!event.altKey) return;
     
     if (event.code == 'KeyS') {
       this.solve();

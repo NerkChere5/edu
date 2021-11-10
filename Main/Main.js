@@ -23,6 +23,8 @@ function _on_load() {
 function main() {
   window.addEventListener('keydown', _on_keydown);
   window.addEventListener('load', _on_load);
+  
+  console.log('main');
 }
 
 

@@ -12,6 +12,8 @@ function _on_keydown() {
 
 
 function _on_load() {
+  console.log('load');
+  
   SkysmartSolver_bot.loop();
 }
 

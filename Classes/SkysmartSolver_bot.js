@@ -115,6 +115,8 @@ export class SkysmartSolver_bot {
     // if (this._state.loops_count >= 5) return;
     if (!this._state.loop_allowed) return;
     
+    console.log('loop');
+    
     if (location.href.startsWith(this.urls_parts[0])) {
       location.replace(this.urls_parts[1]);
     }

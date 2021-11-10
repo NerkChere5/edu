@@ -192,6 +192,8 @@ export class SkysmartSolver_bot {
     let class_num = this._random(this.users_classes[0], this.users_classes[1]);
     document.querySelectorAll(this.elements_selectors.input_class_select_option)[class_num - 1].click();
     
+    await this._delay(1000);
+    
     document.querySelectorAll(this.elements_selectors.input_class_letter).value = this._sequence_getRandom(this.users_classes_letters);
     
     let [user_name, user_surname] = this._user_name_create();

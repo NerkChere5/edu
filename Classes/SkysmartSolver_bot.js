@@ -194,14 +194,14 @@ export class SkysmartSolver_bot {
     
     await this._delay(1000);
     
-    document.querySelectorAll(this.elements_selectors.input_class_letter).value = this._sequence_getRandom(this.users_classes_letters);
+    document.querySelector(this.elements_selectors.input_class_letter).value = this._sequence_getRandom(this.users_classes_letters);
     
     let [user_name, user_surname] = this._user_name_create();
-    document.querySelectorAll(this.elements_selectors.input_name).value = user_name;
-    document.querySelectorAll(this.elements_selectors.input_surname).value = user_surname;
-    document.querySelectorAll(this.elements_selectors.input_email).value = this._user_email_create();
-    document.querySelectorAll(this.elements_selectors.input_password).value = '1234567890';
-    document.querySelectorAll(this.elements_selectors.input_phone).value = this._user_phone_create();
+    document.querySelector(this.elements_selectors.input_name).value = user_name;
+    document.querySelector(this.elements_selectors.input_surname).value = user_surname;
+    document.querySelector(this.elements_selectors.input_email).value = this._user_email_create();
+    document.querySelector(this.elements_selectors.input_password).value = '1234567890';
+    document.querySelector(this.elements_selectors.input_phone).value = this._user_phone_create();
     
     await this._delay(1000);
     

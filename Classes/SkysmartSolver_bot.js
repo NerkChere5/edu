@@ -6,7 +6,6 @@ import {SkysmartSolver} from './SkysmartSolver.js';
 export class SkysmartSolver_bot {
   static _state = {
     loop_allowed: false,
-    // loops_count: 0,
     task_solved: false,
     user_num: 0,
   };
@@ -49,6 +48,13 @@ export class SkysmartSolver_bot {
   
   static _delay(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+  
+  
+  static _input_setValue(input_selector, value) {
+    let input = document.querySelector(input_selector);
+    input.value = value;
+    input.dispatchEvent(new Event('input'));
   }
   
   
@@ -100,7 +106,6 @@ export class SkysmartSolver_bot {
     
     await this._delay(1000);
     
-    // this._state.loops_count++;
     this._state.user_num++;
     this._state.loop_allowed = !!(this._state.user_num % 5);
     this._state_save();
@@ -114,12 +119,10 @@ export class SkysmartSolver_bot {
     
     this._state_restore();
     
-    // if (this._state.loops_count >= 5) return;
     if (!this._state.loop_allowed) return;
     
     console.log('loop');
     
-    // if (location.href.startsWith(this.urls_parts[0])) {
     if (location.href == this.urls_parts[0]) {
       location.replace(this.urls_parts[1]);
     }
@@ -151,8 +154,8 @@ export class SkysmartSolver_bot {
   }
   
   
-  static loop_allow() {
-    this._state.loop_allowed = true;
+  static loop_allowed_set(allowed) {
+    this._state.loop_allowed = allowed;
     this._state_save();
     
     location.reload();
@@ -160,7 +163,15 @@ export class SkysmartSolver_bot {
   
   
   static async solve() {
-    // SkysmartSolver.init();
+    if (this._state.task_solved || !location.href.endsWith('/1')) {
+      document.querySelector(this.elements_selectors.button_next).click();
+      
+      this._state.task_solved = false;
+      this._state_save();
+      
+      await this._delay(5000);
+    }
+    
     SkysmartSolver.solve();
     
     console.log('solve_1');
@@ -198,25 +209,15 @@ export class SkysmartSolver_bot {
     
     await this._delay(1000);
     
-    document.querySelector(this.elements_selectors.input_class_letter).value = this._sequence_getRandom(this.users_classes_letters);
+    this._input_setValue(this.elements_selectors.input_class_letter, this._sequence_getRandom(this.users_classes_letters));
     let [user_surname, user_name] = this._user_name_create();
-    document.querySelector(this.elements_selectors.input_name).value = user_name;
-    document.querySelector(this.elements_selectors.input_surname).value = user_surname;
-    document.querySelector(this.elements_selectors.input_email).value = this._user_email_create();
-    document.querySelector(this.elements_selectors.input_password).value = '1234567890';
-    document.querySelector(this.elements_selectors.input_phone).value = this._user_phone_create();
-    
-    document.querySelector(this.elements_selectors.input_class_letter).dispatchEvent(new Event('input'));
-    document.querySelector(this.elements_selectors.input_name).dispatchEvent(new Event('input'));
-    document.querySelector(this.elements_selectors.input_surname).dispatchEvent(new Event('input'));
-    document.querySelector(this.elements_selectors.input_email).dispatchEvent(new Event('input'));
-    document.querySelector(this.elements_selectors.input_password).dispatchEvent(new Event('input'));
-    document.querySelector(this.elements_selectors.input_phone).dispatchEvent(new Event('input'));
+    this._input_setValue(this.elements_selectors.input_name, user_name);
+    this._input_setValue(this.elements_selectors.input_surname, user_surname);
+    this._input_setValue(this.elements_selectors.input_email, this._user_email_create());
+    this._input_setValue(this.elements_selectors.input_password, '1234567890');
+    this._input_setValue(this.elements_selectors.input_phone, this._user_phone_create());
     
     await this._delay(1000);
-    
-    // this._state.user_num++;
-    // this._state_save();
     
     document.querySelector(this.elements_selectors.button_run).click();
   }

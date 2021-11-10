@@ -5,17 +5,17 @@ import {SkysmartSolver_bot} from '../Classes/SkysmartSolver_bot.js';
 
 
 function _on_keydown() {
-  if (event.code == 'KeyU') {
-    SkysmartSolver_bot.loop_allow();
+  if (event.code == 'KeyL') {
+    SkysmartSolver_bot.loop_allowed_set(!event.altKey);
   }
 }
 
 
-function _on_load() {
-  console.log('load');
+// function _on_load() {
+//   console.log('load');
   
-  SkysmartSolver_bot.loop();
-}
+//   SkysmartSolver_bot.loop();
+// }
 
 
 

@@ -160,10 +160,14 @@ export class SkysmartSolver_bot {
   
   
   static async solve() {
-    SkysmartSolver.init();
+    // SkysmartSolver.init();
     SkysmartSolver.solve();
     
+    console.log('solve_1');
+    
     await this._delay(this._random(5000, 10000));
+    
+    console.log('solve_2');
     
     this._state.task_solved = true;
     this._state_save();

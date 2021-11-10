@@ -28,7 +28,7 @@ export class SkysmartSolver_bot {
     input_surname: '#surname',
   };
   static urls_parts = [
-    'https://edu.skysmart.ru',
+    'https://edu.skysmart.ru/',
     'https://edu.skysmart.ru/contest/english_secondary_2021/roforuhukekitula',
     'https://edu.skysmart.ru/lesson/homework',
     'contest-finish',
@@ -119,7 +119,8 @@ export class SkysmartSolver_bot {
     
     console.log('loop');
     
-    if (location.href.startsWith(this.urls_parts[0])) {
+    // if (location.href.startsWith(this.urls_parts[0])) {
+    if (location.href == this.urls_parts[0]) {
       location.replace(this.urls_parts[1]);
     }
     else if (location.href.startsWith(this.urls_parts[1])) {

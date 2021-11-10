@@ -109,7 +109,9 @@ export class SkysmartSolver_bot {
   }
   
   
-  static loop() {
+  async static loop() {
+    await this._delay(5000);
+    
     this._state_restore();
     
     // if (this._state.loops_count >= 5) return;
@@ -121,9 +123,13 @@ export class SkysmartSolver_bot {
       location.replace(this.urls_parts[1]);
     }
     else if (location.href.startsWith(this.urls_parts[1])) {
+      console.log('loop_1');
+      
       this.user_registration();
     }
     else if (location.href.startsWith(this.urls_parts[2])) {
+      console.log('loop_2');
+      
       if (this._state.task_solved) {
         this.task_next();
       }
@@ -132,9 +138,13 @@ export class SkysmartSolver_bot {
       }
     }
     else if (location.href.includes(this.urls_parts[3])) {
+      console.log('loop_3');
+      
       location.replace(this.urls_parts[4]);
     }
     else if (location.href.startsWith(this.urls_parts[4])) {
+      console.log('loop_4');
+      
       this.logout();
     }
   }

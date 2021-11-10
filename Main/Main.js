@@ -1,18 +1,18 @@
-import {SkysmartSover} from '../Classes/SkysmartSover.js';
-import {SkysmartSover_bot} from '../Classes/SkysmartSover_bot.js';
+import {SkysmartSolver} from '../Classes/SkysmartSolver.js';
+import {SkysmartSolver_bot} from '../Classes/SkysmartSolver_bot.js';
 
 
 
 
 function _on_keydown() {
   if (event.code == 'KeyU') {
-    SkysmartSover_bot.loop_allow();
+    SkysmartSolver_bot.loop_allow();
   }
 }
 
 
 function _on_load() {
-  SkysmartSover_bot.loop();
+  SkysmartSolver_bot.loop();
 }
 
 

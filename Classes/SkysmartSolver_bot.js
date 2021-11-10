@@ -3,7 +3,7 @@ import {SkysmartSolver} from './SkysmartSolver.js';
 
 
 
-export class SkysmartSover_bot {
+export class SkysmartSolver_bot {
   static _state = {
     loop_allowed: false,
     // loops_count: 0,

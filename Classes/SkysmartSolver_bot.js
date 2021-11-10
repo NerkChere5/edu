@@ -77,12 +77,12 @@ export class SkysmartSolver_bot {
   
   
   static _user_email_create() {
-    return this.users_emails_names[this.state.user_num] + '@' + this._sequence_getRandom(this.users_emails_domains);
+    return this.users_emails_names[this._state.user_num] + '@' + this._sequence_getRandom(this.users_emails_domains);
   }
   
   
   static _user_name_create() {
-    return this.users_names[this.state.user_num].split(' ');
+    return this.users_names[this._state.user_num].split(' ');
   }
   
   

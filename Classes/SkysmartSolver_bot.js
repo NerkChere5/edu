@@ -109,7 +109,7 @@ export class SkysmartSolver_bot {
   }
   
   
-  async static loop() {
+  static async loop() {
     await this._delay(5000);
     
     this._state_restore();

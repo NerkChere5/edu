@@ -177,9 +177,13 @@ export class SkysmartSolver_bot {
   
   
   static async solve() {
+    console.log('solve');
+    
     await this._delay(5000);
     
     if (this._state.task_solved || !location.href.endsWith('/1')) {
+      console.log('next');
+      
       document.querySelector(this.elements_selectors.button_next).click();
       
       this._state.task_solved = false;
@@ -192,7 +196,8 @@ export class SkysmartSolver_bot {
     
     console.log('solve_1');
     
-    await this._delay(this._random(5000, 10000));
+    // await this._delay(this._random(5000, 10000));
+    await this._delay(5000);
     
     console.log('solve_2');
     

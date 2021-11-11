@@ -12,6 +12,7 @@ export class SkysmartSolver_bot {
   
   
   static elements_selectors = {
+    button_login: '.header-auth-button',
     button_logout: 'a[href="/logout"]',
     button_next: 'edu-skysmart-button.ng-star-inserted button',
     button_registration: '.-size-s.-type-separated.tab.ng-star-inserted:first-child',
@@ -124,11 +125,14 @@ export class SkysmartSolver_bot {
     
     await this._delay(1000);
     
+    this._state.task_solved = false;
     this._state.user_num++;
     this._state.loop_allowed = !!(this._state.user_num % 5);
     this._state_save();
     
     document.querySelector(this.elements_selectors.button_logout).click();
+    await this._element_await(this.elements_selectors.button_loging);
+    location.replace(this.urls.main);
   }
   
   
@@ -206,7 +210,7 @@ export class SkysmartSolver_bot {
       await this._delay(5000);
     }
     
-    this._element_await(this.elements_selectors.button_next);
+    await this._element_await(this.elements_selectors.button_next);
     SkysmartSolver.solve();
     
     console.log('solve_1');

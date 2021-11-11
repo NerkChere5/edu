@@ -27,11 +27,11 @@ export class SkysmartSolver_bot {
     input_surname: '#surname',
   };
   static urls_regExps = {
-    finish: /^https:\/\/edu.skysmart.ru\/lesson\/homework\/.+?\/contest-finish\/english_secondary_2021\/$/,
+    finish: /^https:\/\/edu.skysmart.ru\/lesson\/homework\/.+?\/contest-finish\/english_secondary_2021$/,
     main: /^https:\/\/edu.skysmart.ru\/$/,
-    ref: /^https:\/\/edu.skysmart.ru\/contest\/english_secondary_2021\/roforuhukekitula\/$/,
-    student: /^https:\/\/edu.skysmart.ru\/student\/$/,
-    task: /^https:\/\/edu.skysmart.ru\/lesson\/homework\/.+?\/\d+\/$/,
+    ref: /^https:\/\/edu.skysmart.ru\/contest\/english_secondary_2021\/roforuhukekitula$/,
+    student: /^https:\/\/edu.skysmart.ru\/student$/,
+    task: /^https:\/\/edu.skysmart.ru\/lesson\/homework\/.+?\/\d+$/,
   };
   static urls = {
     main: 'https://edu.skysmart.ru',

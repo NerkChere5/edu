@@ -7,7 +7,7 @@ export class SkysmartSolver_bot {
   static _state = {
     loop_allowed: false,
     task_solved: false,
-    user_num: 1,
+    user_num: 2,
   };
   
   
@@ -260,5 +260,7 @@ export class SkysmartSolver_bot {
     await this._delay(1000);
     
     document.querySelector(this.elements_selectors.button_run).click();
+    await this._element_await(this.elements_selectors.button_next);
+    location.reload();
   }
 }

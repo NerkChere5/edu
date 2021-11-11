@@ -7,7 +7,7 @@ export class SkysmartSolver_bot {
   static _state = {
     loop_allowed: false,
     task_solved: false,
-    user_num: 0,
+    user_num: 1,
   };
   
   
@@ -26,13 +26,18 @@ export class SkysmartSolver_bot {
     input_phone: '#phone',
     input_surname: '#surname',
   };
-  static urls_parts = [
-    'https://edu.skysmart.ru/',
-    'https://edu.skysmart.ru/contest/english_secondary_2021/roforuhukekitula',
-    'https://edu.skysmart.ru/lesson/homework',
-    'contest-finish',
-    'https://edu.skysmart.ru/student',
-  ];
+  static urls_regExps = {
+    finish: /https:\/\/edu.skysmart.ru\/lesson\/homework\/.+?\/contest-finish\/english_secondary_2021/,
+    main: /https:\/\/edu.skysmart.ru/,
+    ref: /https:\/\/edu.skysmart.ru\/contest\/english_secondary_2021\/roforuhukekitula/,
+    student: /https:\/\/edu.skysmart.ru\/student/,
+    task: /https:\/\/edu.skysmart.ru\/lesson\/homework/,
+  };
+  static urls = {
+    main: 'https://edu.skysmart.ru',
+    ref: 'https://edu.skysmart.ru/contest/english_secondary_2021/roforuhukekitula',
+    student: 'https://edu.skysmart.ru/student',
+  };
   static users_classes = [5, 8];
   static users_classes_letters = 'АБВГДЕЖЗИК';
   static users_emails_domains = ['bk.ru', 'gmail.com', 'mail.ru', 'ya.ru', 'yandex.ru'];
@@ -123,15 +128,19 @@ export class SkysmartSolver_bot {
     
     console.log('loop');
     
-    if (location.href == this.urls_parts[0]) {
-      location.replace(this.urls_parts[1]);
+    // if (location.href == this.urls_parts[0]) {
+    if (this.urls_regExps.main.test(location.href)) {
+      // location.replace(this.urls_parts[1]);
+      location.replace(this.urls.ref);
     }
-    else if (location.href.startsWith(this.urls_parts[1])) {
+    // else if (location.href.startsWith(this.urls_parts[1])) {
+    else if (this.urls_regExps.ref.test(location.href)) {
       console.log('loop_1');
       
       this.user_registration();
     }
-    else if (location.href.startsWith(this.urls_parts[2])) {
+    // else if (location.href.startsWith(this.urls_parts[2])) {
+    else if (this.urls_regExps.task.test(location.href)) {
       console.log('loop_2');
       
       this.solve();
@@ -143,12 +152,15 @@ export class SkysmartSolver_bot {
       //   this.solve();
       // }
     }
-    else if (location.href.includes(this.urls_parts[3])) {
+    // else if (location.href.includes(this.urls_parts[3])) {
+    else if (this.urls_regExps.finish.test(location.href)) {
       console.log('loop_3');
       
-      location.replace(this.urls_parts[4]);
+      // location.replace(this.urls_parts[4]);
+      location.replace(this.urls.student);
     }
-    else if (location.href.startsWith(this.urls_parts[4])) {
+    // else if (location.href.startsWith(this.urls_parts[4])) {
+    else if (this.urls_regExps.student.test(location.href)) {
       console.log('loop_4');
       
       this.logout();

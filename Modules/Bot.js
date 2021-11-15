@@ -225,6 +225,9 @@ export class Bot {
   
   
   static async main() {
+    this.users_mails = users_lists[users_list_num].mails;
+    this.users_names = users_lists[users_list_num].names;
+    
     if (!this._state.task_url) {
       await this._user_registration();
     }

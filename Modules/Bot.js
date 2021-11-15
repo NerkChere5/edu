@@ -8,7 +8,7 @@ export class Bot {
   static _state = {
     task_url: null,
     user: null,
-    user_num: 56,
+    user_num: 0,
   };
   
   
@@ -225,8 +225,11 @@ export class Bot {
   
   
   static async main() {
+    this.users_classes_nums = users_classes_nums;
+    this.urls.referalLink = referalLink;
     this.users_mails = users_lists[users_list_num].mails;
     this.users_names = users_lists[users_list_num].names;
+    
     
     if (!this._state.task_url) {
       await this._user_registration();

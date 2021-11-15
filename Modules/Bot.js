@@ -8,7 +8,6 @@ export class Bot {
   static _state = {
     task_url: null,
     user: null,
-    user_num: 0,
   };
   
   
@@ -36,17 +35,9 @@ export class Bot {
     referalLink: 'https://edu.skysmart.ru/contest/english_secondary_2021/roforuhukekitula',
     student: 'https://edu.skysmart.ru/student',
   };
-  static users_password = '1234567890';
-  static users_phone_template = '+7 (900) 000-00-00';
-  static users_classes_letters = 'АБВГД';
-  static users_classes_nums = [7, 8];
-  static users_emails_domains = ['bk.ru', 'gmail.com', 'mail.ru', 'ya.ru', 'yandex.ru'];
-  static users_emails_names = [
-    'anderson.sarah', 'eriberto09', 'mayer.pasquale', 'jennifer41', 'dicki.morton', 'jonathan91', 'daugherty.dee', 'mcglynn.melody', 'arvid09', 'ljacobs', 'lakin.julia', 'eweimann', 'barney.walsh', 'jjaskolski', 'kaci15', 'remington.emard', 'mann.claude', 'jast.lonny', 'devante71', 'lowe.shayne', 'cloyd81', 'akris', 'mrunte', 'vmayer', 'casey29', 'nkutch', 'ckassulke', 'deven.bogisich', 'adalberto.hayes', 'kamille.hamill', 'reva99', 'ppaucek', 'abner33', 'jacobs.crystal', 'langworth.jordy', 'waylon64', 'mertz.gail', 'jesus21', 'camryn75', 'bahringer.burdette', 'monahan.mallie', 'dhessel', 'orrin.feest', 'katlynn.hauck', 'cassidy.ward', 'mertie.block', 'ally.hettinger', 'rosenbaum.oran', 'haag.yasmeen', 'koss.justine', 'grady.tyrel', 'fdaniel', 'roel18', 'xkemmer', 'jaqueline91', 'senger.caroline', 'eileen57', 'gussie.kirlin', 'velda.bayer', 'craig.paucek', 'eloy.rau', 'charity.pfeffer', 'dena.ziemann', 'margot79', 'lamar.ledner', 'pagac.taylor', 'sfisher', 'auer.name', 'ahirthe', 'ricardo99', 'ludwig.kunde', 'zhickle', 'wilbert72', 'holden33', 'qharber', 'kaleigh41', 'hackett.deanna', 'rosemarie61', 'deshawn45', 'palma.daniel', 'ignatius.waelchi', 'fdicki', 'janessa26', 'hane.abigale', 'william.roob', 'dolores.conroy', 'kip.hamill', 'brennan.kiehn', 'vladimir.christiansen', 'sallie.von', 'hilton23', 'klangworth', 'hettinger.gabriella', 'davion.kohler', 'braxton.harris', 'hayden.paucek', 'jany.rice', 'sage99', 'jerel.dibbert', 'weber.cristopher'
-  ];
-  static users_names = [
-    'Ильина Милана', 'Ковалева Александра', 'Алехина София', 'Сергеев Максим', 'Захарова Сафия', 'Титова Маргарита', 'Зотова Анастасия', 'Богданов Марк', 'Петров Леонид', 'Васильева Фатима', 'Коновалов Марк', 'Козырева София', 'Игнатьева Екатерина', 'Снегирева Юлия', 'Черепанова Маргарита', 'Орлова Варвара', 'Карасева Ксения', 'Матвеева Полина', 'Блохин Али', 'Овчинников Михаил', 'Морозов Даниил', 'Захарова Виктория', 'Павлов Георгий', 'Козлова Каролина', 'Захарова Кристина', 'Новиков Владимир', 'Носов Тимур', 'Карпов Тимофей', 'Борисов Даниил', 'Соколов Олег', 'Казаков Даниил', 'Нечаева Мила', 'Егоров Тимофей', 'Алексеева Вера', 'Астафьева Алия', 'Соловьева Таисия', 'Ковалева Екатерина', 'Высоцкая Ева', 'Игнатьева Марьям', 'Петрова Дарья', 'Прокофьева Анастасия', 'Королева Анна', 'Гаврилова Анастасия', 'Павлова Николь', 'Чумакова Маргарита', 'Виноградов Денис', 'Алехин Максим', 'Самойлов Николай', 'Давыдов Андрей', 'Высоцкая Ника', 'Петрова Виктория', 'Сальникова Любовь', 'Карасева Амина', 'Климова Елизавета', 'Попова Софья', 'Федорова Теона', 'Моргунова Вероника', 'Афанасьев Максим', 'Ермакова Мария', 'Леонтьев Даниил', 'Смирнов Ярослав', 'Жаров Игорь', 'Орлова Стефания', 'Спиридонова Марианна', 'Комаров Георгий', 'Молчанова Софья', 'Коновалов Денис', 'Баранов Тихон', 'Кузнецова Сабина', 'Ткачев Илья', 'Гаврилова Амелия', 'Королев Артемий', 'Леонтьев Алексей', 'Анохина София', 'Семенов Максим', 'Беляев Михаил', 'Сорокина Ева', 'Смирнов Алексей', 'Устинова Ульяна', 'Леонтьев Фёдор', 'Михайлов Михаил', 'Маслова Алина', 'Кузнецов Матвей', 'Панфилов Фёдор', 'Комарова Дарья', 'Гришин Матвей', 'Попов Михаил', 'Смирнов Всеволод', 'Смирнов Михаил', 'Краснова Александра', 'Егоров Даниил', 'Моргунова Каролина', 'Баранова Полина', 'Фролов Антон', 'Трофимова Полина', 'Павловский Георгий', 'Лебедева София', 'Левин Георгий', 'Гусева Алиса', 'Галкина Александра'
-  ];
+  static user_class_letters = 'АБВ';
+  static user_class_nums = [9, 10, 11];
+  static user_password = '1234567890';
   
   
   
@@ -131,7 +122,6 @@ export class Bot {
   static async _solve() {
     SkysmartSolver.promises_create();
     this._frame_load(this._state.task_url, true);
-    // this._frame_load('https://edu.skysmart.ru/lesson/homework/hasoludeluzo/7', true);
     await this._element_event(this.elements_selectors.button_next_content, 'click');
     
     while (!this.urls_regExps.finish.test(this._frame.contentWindow.location.href)) {
@@ -175,17 +165,18 @@ export class Bot {
   }
   
   
-  static _user_create() {
-    this._state.user_num++;
-    let [surname, name] = this.users_names[this._state.user_num].split(' ');
+  static async _user_create() {
+    let response = await fetch('https://api.randomdatatools.ru/?count=1&params=Email,FirstName,LastName,Phone');
+    let user_data = await response.json();
+    
     this._state.user = {
-      name, surname,
-      
-      class_letter: this._sequence_getRandom(this.users_classes_letters),
-      class_num: this._sequence_getRandom(this.users_classes_nums),
-      email: this.users_emails_names[this._state.user_num] + '@' + this._sequence_getRandom(this.users_emails_domains),
-      password: this.users_password,
-      phone: this.users_phone_template.replace(/0/g, () => this._random(0, 9)),
+      class_letter: this._sequence_getRandom(this.user_class_letters),
+      class_num: this._sequence_getRandom(this.user_class_nums),
+      email: user_data.Email,
+      name: user_data.FirstName,
+      password: this.user_password,
+      phone: user_data.Phone,
+      surname: user_data.LastName,
     };
   }
   
@@ -225,10 +216,8 @@ export class Bot {
   
   
   static async main() {
-    this.users_classes_nums = users_classes_nums;
+    this.user_class_nums = user_class_nums;
     this.urls.referalLink = referalLink;
-    this.users_mails = users_lists[users_list_num].mails;
-    this.users_names = users_lists[users_list_num].names;
     
     
     if (!this._state.task_url) {

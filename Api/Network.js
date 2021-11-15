@@ -16,7 +16,7 @@ globalThis.XMLHttpRequest = class extends XMLHttpRequest {
   
   
   
-  _onLoad() {
+  _on_load() {
     let detail = {
       request_body: this._request_body,
       request_headers: this._request_headers,
@@ -34,7 +34,7 @@ globalThis.XMLHttpRequest = class extends XMLHttpRequest {
     super.open(...arguments);
     
     this._url = arguments[1];
-    this.addEventListener('load', this._onLoad);
+    this.addEventListener('load', this._on_load);
   }
   
   

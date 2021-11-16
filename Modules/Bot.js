@@ -26,6 +26,7 @@ export class Bot {
     input_password: '#password',
     input_phone: '#phone',
     input_surname: '#surname',
+    spinner: '.spinner',
   };
   static task_delays = [1000, 2000];
   static urls_regExps = {
@@ -123,9 +124,7 @@ export class Bot {
   static async _solve() {
     SkysmartSolver.promises_data__create();
     this._frame_load(this._state.task_url, true);
-    await this._element_event(this.elements_selectors.button_next_content, 'click');
-    await this._delay(5000);
-    await this._element_event(this.elements_selectors.button_next_content, 'click');
+    await this._tickling();
     
     while (!this.urls_regExps.finish.test(this._frame.contentWindow.location.href)) {
       console.log(this._frame.contentWindow.location.href);
@@ -142,9 +141,7 @@ export class Bot {
       await this._delay(5000);
       // SkysmartSolver.promise_progress__create();
       this._frame_load(undefined, true);
-      await this._element_event(this.elements_selectors.button_next_content, 'click');
-      await this._delay(5000);
-      await this._element_event(this.elements_selectors.button_next_content, 'click');
+      await this._tickling();
       // await SkysmartSolver.promise_progress__await();
       console.log('Reload');
       
@@ -169,6 +166,14 @@ export class Bot {
   static _state_save() {
     let state_json = JSON.stringify(this._state);
     localStorage.setItem(this.name, state_json);
+  }
+  
+  
+  static async _tickling() {
+    while (this._frame.contentDocument.querySelector(this.elements_selectors.spinner)) {
+      await this._element_event(this.elements_selectors.button_next_content, 'click');
+      await this._delay(5000);
+    }
   }
   
   

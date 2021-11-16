@@ -1,3 +1,5 @@
+export {Bot};
+
 import {Bot} from '../Modules/Bot.js';
 import {SkysmartSolver} from '../Modules/SkysmartSolver/SkysmartSolver.js';
 
@@ -16,7 +18,7 @@ function _on_keydown() {
 
 
 
-function main() {
+export function main() {
   window.addEventListener('keydown', _on_keydown);
   
   Bot.init();
@@ -27,4 +29,4 @@ function main() {
 
 
 
-main();
+// main();

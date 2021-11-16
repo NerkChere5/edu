@@ -27,6 +27,7 @@ export class Bot {
     input_phone: '#phone',
     input_surname: '#surname',
   };
+  static task_delays = [1000, 2000];
   static urls_regExps = {
     finish: /^.+?\/contest-finish\/.+?$/,
   };
@@ -120,7 +121,7 @@ export class Bot {
   
   
   static async _solve() {
-    SkysmartSolver.promises_create();
+    SkysmartSolver.promises_data__create();
     this._frame_load(this._state.task_url, true);
     await this._element_event(this.elements_selectors.button_next_content, 'click');
     
@@ -130,19 +131,21 @@ export class Bot {
       this._state.task_url = this._frame.contentWindow.location.href;
       this._state_save();
       
-      await this._delay(5000);
+      let delay = this._random(this.task_delays[0], this.task_delays[1]);
+      await this._delay(delay);
+      await SkysmartSolver.promises_data__await();
       await SkysmartSolver.solve();
       console.log('Solve');
       
       await this._delay(5000);
-      SkysmartSolver.promises_create();
+      SkysmartSolver.promise_progress__create();
       this._frame_load(undefined, true);
       await this._element_event(this.elements_selectors.button_next_content, 'click');
-      await SkysmartSolver.promises_await();
+      await SkysmartSolver.promise_progress__await();
       console.log('Reload');
       
       await this._delay(5000);
-      SkysmartSolver.promises_create();
+      SkysmartSolver.promises_data__create();
       await this._element_click(this.elements_selectors.button_next);
       console.log('Next');
     }
@@ -216,10 +219,6 @@ export class Bot {
   
   
   static async main() {
-    this.user_class_nums = user_class_nums;
-    this.urls.referalLink = referalLink;
-    
-    
     if (!this._state.task_url) {
       await this._user_registration();
     }
@@ -227,6 +226,6 @@ export class Bot {
     await this._solve();
     await this._logout();
     
-    location.reload();
+    // location.reload();
   }
 }

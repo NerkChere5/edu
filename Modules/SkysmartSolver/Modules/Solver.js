@@ -34,12 +34,15 @@ export class Solver {
   static _answers_define() {}
   
   
+  static _delay(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+  
+  
   
   
   static async answers_save(reset = false) {
     this._answers_define();
-    
-    // console.log(this._answers);
     
     if (!this._answers.length) return;
     
@@ -49,7 +52,14 @@ export class Solver {
       headers: {'Authorization': this.user_authorization},
       method: 'post',
     };
-    await fetch(this.url, fetch_params);
+    
+    while (true) {
+      let response = await (await fetch(this.url, fetch_params)).json();
+      
+      if (response?.success) break;
+      
+      this._delay(5000);
+    }
   }
   
   

@@ -3,6 +3,9 @@
 // @grant none
 // @homepage https://edu.skysmart.ru
 // @match https://edu.skysmart.ru
+// @updateURL https://nerkchere5.github.io/edu/SkysmartSolver.use.js
+// @downloadURL https://nerkchere5.github.io/edu/SkysmartSolver.use.js
+// @version 1.0.0
 // ==/UserScript==
 
 

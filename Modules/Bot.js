@@ -124,6 +124,8 @@ export class Bot {
     SkysmartSolver.promises_data__create();
     this._frame_load(this._state.task_url, true);
     await this._element_event(this.elements_selectors.button_next_content, 'click');
+    await this._delay(5000);
+    await this._element_event(this.elements_selectors.button_next_content, 'click');
     
     while (!this.urls_regExps.finish.test(this._frame.contentWindow.location.href)) {
       console.log(this._frame.contentWindow.location.href);
@@ -138,10 +140,12 @@ export class Bot {
       console.log('Solve');
       
       await this._delay(5000);
-      SkysmartSolver.promise_progress__create();
+      // SkysmartSolver.promise_progress__create();
       this._frame_load(undefined, true);
       await this._element_event(this.elements_selectors.button_next_content, 'click');
-      await SkysmartSolver.promise_progress__await();
+      await this._delay(5000);
+      await this._element_event(this.elements_selectors.button_next_content, 'click');
+      // await SkysmartSolver.promise_progress__await();
       console.log('Reload');
       
       await this._delay(5000);

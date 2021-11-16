@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name SkysmartSolver
 // @grant none
+// @noframes
 // @homepage https://edu.skysmart.ru
 // @match https://edu.skysmart.ru
 // @updateURL https://nerkchere5.github.io/edu/SkysmartSolver.use.js

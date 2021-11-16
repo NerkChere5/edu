@@ -21,13 +21,4 @@ function _on_keydown() {
 
 export function main() {
   window.addEventListener('keydown', _on_keydown);
-  
-  // Bot.init();
-  // Bot.main();
-  // SkysmartSolver.init();
 }
-
-
-
-
-// main();

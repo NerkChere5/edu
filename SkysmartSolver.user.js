@@ -16,7 +16,8 @@
   // let Main = await import('http://localhost/Tests/SkysmartSolver/Main/Main.js');
   let Main = await import('https://nerkchere5.github.io/edu/Main/Main.js');
   // Main.Bot.task_delays = [5000, 10000];
-  Main.Bot.urls.referalLink = 'https://edu.skysmart.ru/contest/english_high_2021/fitulonedepazaro';
+  Main.Bot.urls.referalLink = 'https://edu.skysmart.ru/contest/english_secondary_2021/roforuhukekitula';
+  // Main.Bot.urls.referalLink = 'https://edu.skysmart.ru/contest/english_high_2021/fitulonedepazaro';
   Main.Bot.user_class_nums = [9, 10, 11];
   Main.main();
 })();

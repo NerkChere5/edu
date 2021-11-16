@@ -28,7 +28,7 @@ export class Bot {
     input_surname: '#surname',
     spinner: '.spinner',
   };
-  static task_delays = [1000, 2000];
+  static task_delays = [1000, 5000];
   static urls_regExps = {
     finish: /^.+?\/contest-finish\/.+?$/,
   };
@@ -139,10 +139,10 @@ export class Bot {
       console.log('Solve');
       
       await this._delay(5000);
-      // SkysmartSolver.promise_progress__create();
+      SkysmartSolver.promise_progress__create();
       this._frame_load(undefined, true);
       await this._tickling();
-      // await SkysmartSolver.promise_progress__await();
+      await SkysmartSolver.promise_progress__await();
       console.log('Reload');
       
       await this._delay(5000);
@@ -170,10 +170,11 @@ export class Bot {
   
   
   static async _tickling() {
-    while (this._frame.contentDocument.querySelector(this.elements_selectors.spinner)) {
+    do {
       await this._element_event(this.elements_selectors.button_next_content, 'click');
       await this._delay(1000);
     }
+    while (this._frame.contentDocument.querySelector(this.elements_selectors.spinner));
   }
   
   
@@ -235,6 +236,6 @@ export class Bot {
     await this._solve();
     await this._logout();
     
-    // location.reload();
+    location.reload();
   }
 }

@@ -139,10 +139,10 @@ export class Bot {
       console.log('Solve');
       
       await this._delay(5000);
-      SkysmartSolver.promise_progress__create();
+      // SkysmartSolver.promise_progress__create();
       this._frame_load(undefined, true);
       await this._tickling();
-      await SkysmartSolver.promise_progress__await();
+      // await SkysmartSolver.promise_progress__await();
       console.log('Reload');
       
       await this._delay(5000);

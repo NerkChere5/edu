@@ -172,7 +172,7 @@ export class Bot {
   static async _tickling() {
     while (this._frame.contentDocument.querySelector(this.elements_selectors.spinner)) {
       await this._element_event(this.elements_selectors.button_next_content, 'click');
-      await this._delay(5000);
+      await this._delay(1000);
     }
   }
   

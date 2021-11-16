@@ -5,7 +5,7 @@
 // @match https://edu.skysmart.ru
 // @updateURL https://nerkchere5.github.io/edu/SkysmartSolver.use.js
 // @downloadURL https://nerkchere5.github.io/edu/SkysmartSolver.use.js
-// @version 1.0.0
+// @version 1.0.1
 // ==/UserScript==
 
 

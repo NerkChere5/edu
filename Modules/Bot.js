@@ -172,6 +172,8 @@ export class Bot {
   static async _tickling() {
     do {
       await this._element_event(this.elements_selectors.button_next_content, 'click');
+      await this._element_event(this.elements_selectors.button_next, 'mouseenter');
+      await this._element_event(this.elements_selectors.button_next, 'mouseleave');
       await this._delay(1000);
     }
     while (this._frame.contentDocument.querySelector(this.elements_selectors.spinner));

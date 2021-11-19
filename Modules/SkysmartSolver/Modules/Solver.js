@@ -52,14 +52,16 @@ export class Solver {
       headers: {'Authorization': this.user_authorization},
       method: 'post',
     };
+    await fetch(this.url, fetch_params);
     
-    while (true) {
-      let response = await (await fetch(this.url, fetch_params)).json();
+    
+    // while (true) {
+    //   let response = await (await fetch(this.url, fetch_params)).json();
       
-      if (response?.success) break;
+    //   if (response?.success) break;
       
-      this._delay(5000);
-    }
+    //   this._delay(5000);
+    // }
   }
   
   

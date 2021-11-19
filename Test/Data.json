@@ -1,0 +1,250 @@
+{
+  "37340355": {
+    "jwtData": {
+      "uiLanguage": null,
+      "locale": null,
+      "jwtType": 1,
+      "iat": 1637156305,
+      "exp": 1639748305,
+      "roles": [
+        "ROLE_EDU_SKYSMART_STUDENT_USAGE"
+      ],
+      "userId": 37340355,
+      "email": "jennifer41@mail.ru",
+      "name": "Максим",
+      "surname": "Сергеев",
+      "identity": "bereluroma",
+      "avatarUrl": "",
+      "birthday": ""
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MzcxNTYzMDUsImV4cCI6MTYzOTc0ODMwNSwicm9sZXMiOlsiUk9MRV9FRFVfU0tZU01BUlRfU1RVREVOVF9VU0FHRSJdLCJ1c2VySWQiOjM3MzQwMzU1LCJlbWFpbCI6Implbm5pZmVyNDFAbWFpbC5ydSIsIm5hbWUiOiLQnNCw0LrRgdC40LwiLCJzdXJuYW1lIjoi0KHQtdGA0LPQtdC10LIiLCJpZGVudGl0eSI6ImJlcmVsdXJvbWEifQ.Xjt_QC5o266EWolq_kaYBWW2OJEsuBP2aqQYiuUb1E6-o8OkqYP6eLX37caie8txalSQqOLStP2pEisU9hiIiwMAb4IA9M27npl8eLyuTOM18DCTFdYvogUrIrNmUNPL-7LfW621Z0eSVfUNE3ugdwiCB_3tt61DrbVHymGh3LgFcyDSmvViAZm-meE9Y86f-pJDoJOsuFsm4bqgl-RFWa0vjrXyKem2OF1P-Im5TyK8eq2fV68gF3jS6YZWv4cFMUJzlhQHMHdfqp8LBK7ncOli4DrCT4LxpmWOWVbVqmAIC_lNiQci9GkYrAkRzYAfYggvr-8iza_ev0s3mTFVwT-3aUtO6B7lAQUr5hqpp0O2EmbECKZtA0jaRqqVXQuqcyZPV8FGQgy5KPUl9P7UDjHGsw8lXlf7o9gzDsS-erNJlnjwE1q3nkR91yOPyi69MH-RRkN5UYM_wcNmXk2FH2uLp8Smd-BJ3NGKJtGRuwuc_igT8ukv-X4pPC66I9XHgSIKdu_s4KU6yDNoFC75_ABArNSApvHoNtTs5wyY_MB4c9UTNNzfYm0RaTm7pCKECJIy5zL2mKSc67TTukK3-xgcM6xgpMyHu6B2Bk20tA75P0FF-adHJ4usNyjVqzG3Y3SB5AlqXpopnKw3DimK9t5YbluLPIc06qVHGtaeBz8",
+    "userId": 37340355,
+    "updatedAt": 1637156300895
+  },
+  "38679834": {
+    "jwtData": {
+      "uiLanguage": null,
+      "locale": null,
+      "jwtType": 1,
+      "iat": 1637151926,
+      "exp": 1639743926,
+      "roles": [
+        "ROLE_EDU_SKYSMART_TEACHER_USAGE"
+      ],
+      "userId": 38679834,
+      "email": "",
+      "name": "",
+      "surname": "",
+      "identity": "bapexelake",
+      "avatarUrl": "",
+      "birthday": ""
+    },
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MzcxNTE5MjYsImV4cCI6MTYzOTc0MzkyNiwicm9sZXMiOlsiUk9MRV9FRFVfU0tZU01BUlRfVEVBQ0hFUl9VU0FHRSJdLCJ1c2VySWQiOjM4Njc5ODM0LCJlbWFpbCI6bnVsbCwibmFtZSI6bnVsbCwic3VybmFtZSI6bnVsbCwiaWRlbnRpdHkiOiJiYXBleGVsYWtlIn0.Qq5nQTOAXnFG3aLHCyjc8eJW_CVyZaeujfTtqKSOJ0FZjJJfy5mZTMV9LL8C2tALt7fRNWaqg-Qfb6kSeOp7p2LONwFPzAY0sgfMkrjcWeGbJnQkXA-qEfl5JUoJ66ANe9gIACvrG67UhBj3clqAu7AuCQVBdtlOfOJcuIwz5qmTW1YYoW0qMfzYZ03Di1fHhnInqteZwyUhdqIAcRjqzMlueE4ehqzLxXsemFpC2FRkFUygUIQxxun5Fiw7Vn95cjv1xsU6kLfJBK0plhywU1USzOhcWW6wpF_EZYZHsfV42251xIbYkh3G3kO6ECkIQg_E_V1alhVERxufy6PwM3OdrJR9G6B7wWN-DHbwG6-FF35RHCD0NQzSJYWrjahY01DwirPnK2bchmGpeyLGx6DLJ7qCAM6tfpbsRke3vWvcbjf_n1XG9tLPkpdY4laXmpZZjej3sy2RpkoEEI9OqvuuK-jwYxoz8kUxa-mgG8x52pVqY1r0V7WWOHzBlfiiysDPS9Q2yKzcxeGjICMBNj3ntHzhfVzTARW9RgG668Oucm346-iZgFGxr3TQDnMmwNbZJOGJbU4o70q9afhdueapumVPIkfhSBAIVtO3ZqnvOE-ysRI3M4AmLXpoTM4GGuS-EHccQyNt7l_Zp-Qvl26Hoo6kODg9b56Gpm8Mdik",
+    "userId": 38679834,
+    "updatedAt": 1637151922288
+  }
+}
+
+
+{
+  "completeness": 100,
+  "progressId": "8130e60e-53ad-432e-bd55-a8c52f6f929f",
+  "progressType": "step",
+  "roomHash": "nemuvobenaxa",
+  "score": 83,
+  "skippedAt": null,
+  "userId": 37340355
+}
+
+
+{
+  "hash": "nemuvobenaxa",
+  "taskHash": "tubolimuho",
+  "timetableId": null,
+  "scope": "edu",
+  "expectedStartAt": "2021-11-17T13:39:37+00:00",
+  "closedAt": null,
+  "contentRevisionType": "personal",
+  "contentRevisionId": 37340355,
+  "meta": null,
+  "participants": [
+    {
+      "identityId": 37289336,
+      "identityType": "eduSkysmartUserId",
+      "role": "teacher",
+      "score": null,
+      "scoreAfterLimit": null,
+      "completeness": null,
+      "completenessAfterLimit": null,
+      "nodes": []
+    },
+    {
+      "identityId": 37340355,
+      "identityType": "eduSkysmartUserId",
+      "role": "student",
+      "score": null,
+      "scoreAfterLimit": null,
+      "completeness": null,
+      "completenessAfterLimit": null,
+      "nodes": [
+        {
+          "id": 45699221,
+          "title": "Домашка",
+          "type": "lesson",
+          "meta": {
+            "contentGroupIdPostfix": "-3"
+          },
+          "score": 11,
+          "completeness": 33,
+          "steps": [
+            {
+              "stepId": "576fda7b-bbd4-44df-8cd2-c56b7e00c301",
+              "score": 29,
+              "completeness": 100,
+              "skippedAt": null,
+              "isInteractive": true
+            },
+            {
+              "stepId": "8130e60e-53ad-432e-bd55-a8c52f6f929f",
+              "score": 16,
+              "completeness": 33,
+              "skippedAt": null,
+              "isInteractive": true
+            },
+            {
+              "stepId": "f1e2f1b5-d6ac-423a-b232-2a6a749be9c8",
+              "score": null,
+              "completeness": null,
+              "skippedAt": null,
+              "isInteractive": true
+            },
+            {
+              "stepId": "578a28d0-dfaa-488d-b373-6eba302cd4cb",
+              "score": null,
+              "completeness": null,
+              "skippedAt": null,
+              "isInteractive": true
+            },
+            {
+              "stepId": "e55c68bb-b8f3-472f-9fc8-4a2f4d66aa71",
+              "score": 100,
+              "completeness": 100,
+              "skippedAt": "2021-11-17T13:39:37+00:00",
+              "isInteractive": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "taskMeta": {
+    "path": {
+      "module": {
+        "id": 10920,
+        "title": "Цилиндр, конус, шар",
+        "lesson": {
+          "id": 31792,
+          "title": "Цилиндр"
+        }
+      }
+    },
+    "subject": {
+      "id": 3,
+      "title": "Геометрия"
+    },
+    "teacher": {
+      "id": 37289336,
+      "name": "Дмитрий Юрьевич",
+      "surname": "Романов"
+    },
+    "workbook": {
+      "class": {
+        "id": 47,
+        "title": "11"
+      },
+      "workbook": {
+        "id": 907,
+        "title": "Интерактивные задания",
+        "subject": "Геометрия"
+      },
+      "publisher": "edu-skysmart"
+    },
+    "publisher": "edu-skysmart",
+    "stepUuids": [
+      "576fda7b-bbd4-44df-8cd2-c56b7e00c301",
+      "8130e60e-53ad-432e-bd55-a8c52f6f929f",
+      "f1e2f1b5-d6ac-423a-b232-2a6a749be9c8",
+      "578a28d0-dfaa-488d-b373-6eba302cd4cb",
+      "e55c68bb-b8f3-472f-9fc8-4a2f4d66aa71"
+    ],
+    "stepsMeta": {
+      "576fda7b-bbd4-44df-8cd2-c56b7e00c301": {
+        "title": "Повторение: площадь окружности, длина круга. Цилиндр",
+        "extraStepsQuantity": 0
+      },
+      "578a28d0-dfaa-488d-b373-6eba302cd4cb": {
+        "title": "Радиус цилиндра",
+        "extraStepsQuantity": 0
+      },
+      "8130e60e-53ad-432e-bd55-a8c52f6f929f": {
+        "title": "Сечение цилиндра",
+        "extraStepsQuantity": 0
+      },
+      "f1e2f1b5-d6ac-423a-b232-2a6a749be9c8": {
+        "title": "Высота цилиндра 1",
+        "extraStepsQuantity": 0
+      }
+    },
+    "showAnswerStatus": true,
+    "stepUuidsWithOpenAnswers": [],
+    "isCheckOpenAnswerModeSupported": true,
+    "isReviewOpenAnswerModeSupported": true
+  },
+  "taskStudentMeta": {
+    "steps": [
+      {
+        "isMaster": true,
+        "isRandom": false,
+        "lessonId": 31792,
+        "stepUuid": "576fda7b-bbd4-44df-8cd2-c56b7e00c301",
+        "masterStepUuid": "576fda7b-bbd4-44df-8cd2-c56b7e00c301"
+      },
+      {
+        "isMaster": true,
+        "isRandom": false,
+        "lessonId": 31792,
+        "stepUuid": "8130e60e-53ad-432e-bd55-a8c52f6f929f",
+        "masterStepUuid": "8130e60e-53ad-432e-bd55-a8c52f6f929f"
+      },
+      {
+        "isMaster": true,
+        "isRandom": false,
+        "lessonId": 31792,
+        "stepUuid": "f1e2f1b5-d6ac-423a-b232-2a6a749be9c8",
+        "masterStepUuid": "f1e2f1b5-d6ac-423a-b232-2a6a749be9c8"
+      },
+      {
+        "isMaster": true,
+        "isRandom": false,
+        "lessonId": 31792,
+        "stepUuid": "578a28d0-dfaa-488d-b373-6eba302cd4cb",
+        "masterStepUuid": "578a28d0-dfaa-488d-b373-6eba302cd4cb"
+      }
+    ],
+    "variantId": "-3",
+    "scoreVersion": 1637159583.413888,
+    "extraStepUuids": [
+      "e55c68bb-b8f3-472f-9fc8-4a2f4d66aa71"
+    ],
+    "latestProgressVersion": 1637159583.413888,
+    "lastScoreEventUpdatedAt": "2021-11-17T14:33:03.481+00:00",
+    "lastProgressEventUpdatedAtMicro": "2021-11-17T14:33:03.436+00:00",
+    "taskStudentScoreUpdateLatencyMicro": 0.06744909286499023
+  },
+  "startedAt": "2021-11-17T13:39:38+00:00",
+  "completedAt": null,
+  "currentTime": "2021-11-17T14:43:00+00:00",
+  "fingerprint": "",
+  "showInteractiveHint": false,
+  "supportBackendAnswerCheck": false
+}

@@ -1,14 +1,12 @@
 // ==UserScript==
   // @name SkysmartSolver
+  // @downloadURL https://nerkchere5.github.io/edu/SkysmartSolver.user.js
   // @version 2.4.8
-  
-  // downloadURL https://nerkchere5.github.io/edu/SkysmartSolver.user.js
-  // @homepage https://edu.skysmart.ru
-  // @updateURL https://nerkchere5.github.io/edu/SkysmartSolver.user.js
   
   // @match https://edu.skysmart.ru
   // @match https://edu.skysmart.ru/lesson/homework/*
   // @noframes
+  // @run-at document-start
   
   // @grant none
 // ==/UserScript==

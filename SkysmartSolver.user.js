@@ -2,7 +2,7 @@
   // @name SkysmartSolver
   // @downloadURL https://nerkchere5.github.io/edu/SkysmartSolver.user.js
   // @homepage https://edu.skysmart.ru
-  // @version 2.4.11
+  // @version 2.4.12
   
   // @match https://edu.skysmart.ru
   // @match https://edu.skysmart.ru/lesson/homework/*
@@ -25,7 +25,7 @@
   Main.Bot.user_class_nums = [9, 10, 11];
   
   Main.main();
-  // Main.Bot.init();
-  // Main.Bot.main();
-  Main.SkysmartSolver.init();
+  Main.Bot.init();
+  Main.Bot.main();
+  // Main.SkysmartSolver.init();
 })();

@@ -34,7 +34,7 @@ export class Bot {
   };
   static urls = {
     main: 'https://edu.skysmart.ru',
-    referalLink: 'https://edu.skysmart.ru/contest/english_secondary_2021/roforuhukekitula',
+    referalLink: 'https://edu.skysmart.ru/contest/english_high_2021/fitulonedepazaro',
     student: 'https://edu.skysmart.ru/student',
   };
   static user_class_letters = 'АБВ';
